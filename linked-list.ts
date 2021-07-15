@@ -158,6 +158,20 @@ export class LinkedList<T> implements ILinkedList<T> {
     }
     return false;
   }
+
+  /**
+   * Traverses the entire list, printing the element of each node
+   */
+  traverse(): void {
+    let runner = this.head;
+    if (runner === null) {
+      return;
+    }
+    while(runner != null) {
+      console.log(runner.item);
+      runner = runner?.next;
+    }
+  }
 }
 
 /**
