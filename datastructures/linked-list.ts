@@ -1,4 +1,4 @@
-import { ILinkedList, ILinkedListNode } from './interfaces/linked-list.interface';
+import { ILinkedList, ILinkedListNode } from '../interfaces/linked-list.interface';
 
 /**
  * Implementation of the doubly linked list

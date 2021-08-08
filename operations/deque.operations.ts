@@ -1,8 +1,7 @@
 import inquirer from "inquirer";
 import { Operations } from "../enums/operations.enum";
-import { LinkedList } from "../linked-list";
 
-export function doublyLinkedTest(): void {
+export function dequeTest(): void {
   inquirer.prompt([
     {
       type: 'list',
@@ -22,7 +21,6 @@ export function doublyLinkedTest(): void {
     }
   ])
     .then((answers) => {
-      const linkedList = new LinkedList<number>();
       switch (answers.operation) {
         case Operations.InsertOne:
         case Operations.InsertRandom:

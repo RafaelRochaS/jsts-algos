@@ -1,4 +1,4 @@
-import { IDeque } from "./interfaces/deque.interface";
+import { IDeque } from "../interfaces/deque.interface";
 
 /**
  * Implementation for the Deque ADT.
