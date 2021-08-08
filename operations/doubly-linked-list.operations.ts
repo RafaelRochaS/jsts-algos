@@ -1,5 +1,5 @@
 import inquirer from "inquirer";
-import { Deque } from "../deque";
+import { Deque } from "../datastructures/deque";
 import { Operations } from "../enums/operations.enum";
 
 export function dequeTest(): void {
