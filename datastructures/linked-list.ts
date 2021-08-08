@@ -45,6 +45,7 @@ export class LinkedList<T> implements ILinkedList<T> {
   clear(): void {
     this._head = null;
     this._tail = null;
+    this._length = 0;
   }
 
   /**
