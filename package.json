@@ -18,6 +18,9 @@
   "devDependencies": {
     "@types/inquirer": "^7.3.3",
     "@types/node": "^16.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
     "jsdoc": "^3.6.7",
     "jsdoc-plugin-typescript": "^2.0.6",
     "ts-node": "^9.1.1",

@@ -33,7 +33,7 @@ async function mainMenu(): Promise<void> {
         }
       })
       .catch((err) => console.error(err));
-      if (breakLoop) break;
+    if (breakLoop) break;
   }
 }
 
