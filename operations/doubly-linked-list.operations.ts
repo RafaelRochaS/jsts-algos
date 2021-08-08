@@ -52,7 +52,11 @@ async function testMenu(list: LinkedList<number>): Promise<void> {
             console.log('Done.');
             break;
           case Operations.Contains:
+            await contains(list);
+            break;
           case Operations.Delete:
+            await remove(list);
+            break;
           case Operations.Length:
             console.log(list.length);
             break;
@@ -108,4 +112,30 @@ async function insertRandom(list: LinkedList<number>): Promise<void> {
 
 function validateNumber(input: number) {
   return !isNaN(input);
+}
+
+async function contains(list: LinkedList<number>): Promise<void> {
+  await inquirer.prompt({
+    type: 'number',
+    name: 'value',
+    message: 'Which number to search? ',
+    validate: (input) => validateNumber(input),
+  })
+    .then((answers) => {
+      console.log(list.contains(answers.value));
+    })
+    .catch((err) => console.log(err));
+}
+
+async function remove(list: LinkedList<number>): Promise<void> {
+  await inquirer.prompt({
+    type: 'number',
+    name: 'value',
+    message: 'Which number to remove? ',
+    validate: (input) => validateNumber(input),
+  })
+    .then((answers) => {
+      console.log(list.delete(answers.value));
+    })
+    .catch((err) => console.log(err));
 }

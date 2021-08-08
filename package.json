@@ -21,6 +21,8 @@
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
     "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
     "jsdoc": "^3.6.7",
     "jsdoc-plugin-typescript": "^2.0.6",
     "ts-node": "^9.1.1",

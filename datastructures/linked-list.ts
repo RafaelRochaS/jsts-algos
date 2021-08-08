@@ -130,7 +130,7 @@ export class LinkedList<T> implements ILinkedList<T> {
   }
 
   /**
-   * Evaluates if an element is present in the list. Optionally, removes thet item
+   * Evaluates if an element is present in the list. Optionally, removes that item
    * @param element The element to check
    * @param remove Whether or not to remove the item if found. Defaults to false
    * @returns True if element is found, false otherwise
