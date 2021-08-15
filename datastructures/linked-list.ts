@@ -114,6 +114,7 @@ export class LinkedList<T> implements ILinkedList<T> {
    */
   delete(element: T): T | boolean {
     if (this.contains(element, true)) {
+      console.log('entrou no if');
       return element;
     } 
     return false;
@@ -136,6 +137,7 @@ export class LinkedList<T> implements ILinkedList<T> {
    * @returns True if element is found, false otherwise
    */
   contains(element: T, remove = false): Boolean {
+    console.log('Contains element: ' + element + ' remove: ' + remove);
     if (this._head === null) {
       return false;
     }

@@ -68,6 +68,9 @@ async function testMenu(list: LinkedList<number>): Promise<void> {
             }
             break;
           case Operations.Update:
+            await update(list);
+            console.log('Done.');
+            break;
           case Operations.Exit:
             breakLoop = true;
             break;
@@ -138,4 +141,8 @@ async function remove(list: LinkedList<number>): Promise<void> {
       console.log(list.delete(answers.value));
     })
     .catch((err) => console.log(err));
+}
+
+async function update (list: LinkedList<number>): Promise<void> {
+
 }
